@@ -1,0 +1,76 @@
+html, body {
+  font-family: $mon;
+  font-size: 16px;
+  font-weight: 400;
+  color: $cText;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 14px;
+  font-family: $mon;
+  color: $white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  transition: all .2s linear;
+  cursor: pointer;
+  outline-color: $white;
+}
+
+.title-info {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-family: $kau;
+  color: $cText;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  color: $cText;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+
+  &:after {
+    content: '';
+    display: block;
+    margin: 40px auto 0;
+    background-color: $lPink;
+    width: 60px;
+    height: 3px;
+  }
+}
+
+.info-blocks .container {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+

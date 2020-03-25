@@ -1,0 +1,104 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .logo {
+    font-size: 30px;
+    color: $white;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__item {
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      color: $white;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center;
+      transition: .2s all linear;
+
+      &:not(.icon-item) {
+        margin-left: 58px;
+      }
+
+      &:hover {
+        color: $lYellow;
+
+        &:after {
+          content: '';
+          background: $lYellow;
+          width: 100%;
+        }
+      }
+
+      &.active {
+        color: $lYellow;
+
+        &:after {
+          content: '';
+          background: $lYellow;
+          width: 100%;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+        height: 3px;
+        width: 0;
+        transition: .2s all linear;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .icon-item {
+      margin-left: 40px;
+      
+      &:hover{
+        .icon {
+          fill: $lYellow;
+        }
+      }
+
+      &.active{
+        .icon {
+          fill: $lYellow;
+        }
+      }
+
+      .icon {
+        fill: $white;
+        transition: all .2s linear;
+      }
+
+      .icon-SHOPPING-CART {
+        width: 18px;
+        height: 15px;
+      }
+
+      .icon-MAGNIFYING-GLASS {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

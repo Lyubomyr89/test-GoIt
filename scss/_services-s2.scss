@@ -1,0 +1,25 @@
+.service .container {
+  overflow: hidden;
+}
+
+.service_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -90px;
+  padding-top: 60px;
+
+  &__item {
+    position: relative;
+    width: 33.333%;
+    padding: 0 10px 0 70px;
+    margin-bottom: 90px;
+
+    .icon {
+      position: absolute;
+      left: 10px;
+      top: 0;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

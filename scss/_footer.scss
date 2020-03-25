@@ -1,0 +1,52 @@
+.footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-top: 1px solid #e5e5e5;
+
+    .copyright {
+      font-size: 14px;
+      color: $cText;
+      line-height: 1.2;
+      text-align: left;
+
+      span {
+        color: $lPink;
+      }
+    }
+
+    .subscribe {
+      .email-subscribe {
+        display: inline-block;
+        height: 40px;
+        margin-right: -5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 15px;
+        font-family: $rob-li;
+        color: rgb(204, 204, 204);
+        font-style: italic;
+        line-height: 40px;
+        text-align: left;
+        border: 1px solid rgb(204, 204, 204);
+        border-right: 0;
+        outline: none;
+
+        &::placeholder {
+          font-size: 15px;
+          font-family: $rob-li;
+          color: rgb(204, 204, 204);
+        }
+      }
+
+      .btn-subscribe{
+        height: 40px;
+        padding: 0 34px;
+        background: $lCyan;
+        border: none;
+      }
+    }
+  }
+}
