@@ -6,5 +6,5 @@ menuItem.forEach(function (item) {
             thiss.classList.remove('active');
         });
         item.classList.add('active');
-    }
+    };
 });
