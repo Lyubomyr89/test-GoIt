@@ -183,6 +183,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 33.333%;
     padding: 0 10px 0 70px;
     margin-bottom: 90px; }
+    .service_list__item .title-item {
+      font-size: 14px;
+      color: #333333;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: left; }
     .service_list__item .icon {
       position: absolute;
       left: 10px;
